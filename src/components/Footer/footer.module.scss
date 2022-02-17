@@ -1,0 +1,64 @@
+.contentC {
+  color: #fff;
+  background-color: #212121;
+  height: 318px;
+  position: relative;
+  padding-left: 17px;
+  .infoC {
+    display: none;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem 0;
+    .techcombank {
+      height: 22px;
+      width: 10rem;
+    }
+    > div:first-child {
+      > img {
+        margin-left: 1rem;
+      }
+    }
+    .iconsC {
+      > div:last-child {
+        margin-top: 12px;
+        display: flex;
+        gap: 1.5rem;
+        > img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bottom {
+    color: #80878b;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    width: calc(100% - 62px * 2);
+    padding: 3rem 0;
+    border-top: 3px solid #333333;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contentC {
+    height: 369px;
+    .infoC {
+      display: flex;
+    }
+    .bottom {
+      transform: none;
+      left: 17px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      padding: 2rem 0;
+      width: calc(100% - 17px);
+    }
+  }
+}
